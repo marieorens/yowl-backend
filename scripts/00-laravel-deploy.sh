@@ -13,3 +13,9 @@ php artisan migrate --force
 
 echo "Running seeders....."
 php artisan db:seed
+
+echo "Generating Swagger documentation..."
+php artisan l5-swagger:generate
+
+echo "Clearing cache..."
+php artisan cache:clear
